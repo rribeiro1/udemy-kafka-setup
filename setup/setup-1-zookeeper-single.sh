@@ -20,10 +20,10 @@ echo "172.31.9.1 kafka1
 172.31.35.20 zookeeper3" | sudo tee --append /etc/hosts
 
 # download Zookeeper and Kafka. Recommended is latest Kafka (0.10.2.1) and Scala 2.12
-wget http://apache.mirror.digitalpacific.com.au/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz
-tar -xvzf kafka_2.12-0.10.2.1.tgz
-rm kafka_2.12-0.10.2.1.tgz
-mv kafka_2.12-0.10.2.1 kafka
+wget http://apache.mirror.digitalpacific.com.au/kafka/2.0.0/kafka_2.12-2.0.0.tgz
+tar -xvzf kafka_2.12-2.0.0.tgz
+rm kafka_2.12-2.0.0.tgz
+mv kafka_2.12-2.0.0 kafka
 cd kafka/
 # Zookeeper quickstart
 cat config/zookeeper.properties
